@@ -92,6 +92,11 @@ legend {
   display: inline;
 }
 
+#othertext {
+  display:block;
+  margin: 20px 0;
+}
+
 
 /********************
  Input Styles

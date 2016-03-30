@@ -38,7 +38,7 @@
         
           <label for="state">State</label>
           <select id="state" name="user_state">
-            <option value="choose-state">Choose State</option>
+            <option value="" disabled selected hidden>Choose State</option>
             <option value="alabama">AL</option>
             <option value="alska">AK</option>
             <option value="arizona">AZ</option>
@@ -102,20 +102,20 @@
       
        
         <div class="checkboxOne" >
-          <input type="checkbox" value="1" id="checkboxOneInput" name="news_type">
+          <input type="checkbox" value="html_news" id="checkboxOneInput" name="news_type">
           <label for="checkboxOneInput"></label>
           <p class="html">HTML</p>
         </div><br>   
             
         
         <div class="checkboxtwo">
-          <input type="checkbox" value="1" id="checkboxtwoInput" name="news_type">
+          <input type="checkbox" value="css_news" id="checkboxtwoInput" name="news_type">
           <label for="checkboxtwoInput"></label>
           <p class="css">CSS</p>  
         </div><br>
         
         <div class="checkboxthree">
-          <input type="checkbox" value="1" id="checkboxthreeInput" name="news_type">
+          <input type="checkbox" value="js_news" id="checkboxthreeInput" name="news_type">
           <label for="checkboxthreeInput"></label>
           <p class="js">Javascript</p>
         </div>
@@ -125,11 +125,11 @@
         <input type="radio" id="html" value="html" name="news_format">
         <label for="html">HTML</label><br>
 
-        <input type="radio" id="plain" value="html" name="news_format">
+        <input type="radio" id="plain" value="plain_text" name="news_format">
         <label for="plain">Plain text</label>   
-        <p>Other topics you'd like to hear about</p>
         
-        <textarea></textarea>
+        <label for="other" id="othertext">Other topics you'd like to hear about</label>
+        <textarea id="other" name="other_topics"></textarea>
         
         <button type="submit">Sign Up</button>
         
